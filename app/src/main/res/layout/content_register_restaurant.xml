@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/telf" />
 
     <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
+        android:id="@+id/next"
         android:layout_width="380dp"
         android:layout_height="182dp"
         android:layout_marginStart="8dp"
