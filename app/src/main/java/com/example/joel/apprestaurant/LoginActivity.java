@@ -73,9 +73,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onSuccess(int statusCode, Header[] headers, JSONObject response){
                 AlertDialog alertDialog = new AlertDialog.Builder(LoginActivity.this).create();
                 try {
-                    String msn = response.getString("msn");
+                    //String msn = response.getString("msn");
                     String tok = response.getString("token");
-                    alertDialog.setTitle("RESPONSE SERVER");
+                    /*alertDialog.setTitle("RESPONSE SERVER");
                     alertDialog.setMessage(msn);
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Ok", new DialogInterface.OnClickListener(){
                         @Override
@@ -83,10 +83,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             dialog.dismiss();
                         }
                     });
-                    alertDialog.show();
+                    alertDialog.show();*/
 
-                    /*Intent intentRestaurants = new Intent(LoginActivity.this, RestaurantsActivity.class);
-                    LoginActivity.this.startActivity(intentRestaurants);*/
+                    Intent intentRestaurants = new Intent(LoginActivity.this, RestaurantsActivity.class);
+
+                    intentRestaurants.putExtra("token", tok);
+
+                    LoginActivity.this.startActivity(intentRestaurants);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
