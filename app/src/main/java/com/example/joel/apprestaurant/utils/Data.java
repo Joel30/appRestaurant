@@ -7,4 +7,14 @@ public class Data {
     public static String REGISTER_CLIENT = HOST + "/client";
     public static String LOGIN = HOST + "/login";
 
+
+    public static String UPLOAD_RESTAURANT = "/restaurants/uploadrestaurant";
+
+    public static String REGISTER_MENU="/menus/";
+    public static String UP_IMAGE_MENU="/menus/uploadmenus";
+    //
+    public static String ID_CLIENT=null;
+    public static String ID_RESTAURANT=null;
+    //
+
 }

@@ -9,4 +9,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_register_restaurant">RegisterRestaurant</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_camera_photo">CameraPhoto</string>
 </resources>
